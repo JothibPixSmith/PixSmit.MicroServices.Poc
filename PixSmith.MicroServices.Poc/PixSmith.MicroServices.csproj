@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>False</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="testDb.db" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="testDb.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PixSmith.MicroServices.Poc.Domain\PixSmith.MicroServices.Domain.csproj" />
+    <ProjectReference Include="..\PixSmith.MicroServices.Poc.Infrastructure.Database\PixSmith.MicroServices.Infrastructure.Database.csproj" />
+    <ProjectReference Include="..\PixSmith.MicroServices.Poc.Infrastructure.JsonContexts\PixSmith.MicroServices.Poc.Infrastructure.JsonContexts.csproj" />
+    <ProjectReference Include="..\PixSmith.MicroServices.Poc.Infrastructure.Repositories\PixSmith.MicroServices.Infrastructure.Repositories.csproj" />
+    <ProjectReference Include="..\PixSmith.MicroServices.Poc.Services\PixSmith.MicroServices.Services.csproj" />
+  </ItemGroup>
+
+</Project>
