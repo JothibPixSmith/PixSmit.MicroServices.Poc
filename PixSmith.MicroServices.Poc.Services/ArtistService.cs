@@ -25,7 +25,7 @@ namespace PixSmith.MicroServices.Services
 
         public async Task<Artist> Save(Artist artist)
         {
-            if(artist.Guid != Guid.Empty)
+            if (artist.Guid != Guid.Empty)
             {
                 this.AssignGuidToRecords(artist.Discography);
 
@@ -47,10 +47,10 @@ namespace PixSmith.MicroServices.Services
         {
             foreach (var record in records)
             {
-                if(record.Guid == Guid.Empty)
+                if (record.Guid == Guid.Empty)
                 {
                     record.Guid = Guid.NewGuid();
-                }                
+                }
             }
         }
     }

@@ -23,11 +23,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{D7B7CD32-5E94-4265-A443-074A618A2B56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixSmith.MicroServices.Poc.Infrastructure.JsonContexts", "PixSmith.MicroServices.Poc.Infrastructure.JsonContexts\PixSmith.MicroServices.Poc.Infrastructure.JsonContexts.csproj", "{D8EE1D95-E575-4A27-AC89-65B2875AE827}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PixSmith.MicroServices.Poc.Infrastructure.JsonContexts", "PixSmith.MicroServices.Poc.Infrastructure.JsonContexts\PixSmith.MicroServices.Poc.Infrastructure.JsonContexts.csproj", "{D8EE1D95-E575-4A27-AC89-65B2875AE827}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example_Clients", "Example_Clients", "{08168159-00C0-4E0B-A58A-A5DAA9AA72A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixSmith.MicroServices.Poc.AsyncAwait", "PixSmith.MicroServices.Poc.AsyncAwait\PixSmith.MicroServices.Poc.AsyncAwait.csproj", "{3714242E-BCB8-4900-A84E-8E5DB4747852}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PixSmith.MicroServices.Poc.AsyncAwait", "PixSmith.MicroServices.Poc.AsyncAwait\PixSmith.MicroServices.Poc.AsyncAwait.csproj", "{3714242E-BCB8-4900-A84E-8E5DB4747852}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

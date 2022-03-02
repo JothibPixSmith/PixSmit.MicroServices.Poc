@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Threading.Tasks;
 using PixSmith.MicroServices.Domain;
 using PixSmith.MicroServices.Infrastructure.Database;
+using System.Threading.Tasks;
 
 namespace PixSmith.MicroServices.Infrastructure.Repositories.IntegrationTests.Context
 {

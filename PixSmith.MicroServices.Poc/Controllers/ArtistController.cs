@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using PixSmith.MicroServices.Domain;
 using PixSmith.MicroServices.Services.Interfaces;
 
@@ -20,6 +19,7 @@ namespace PixSmith.MicroServices.Controllers
         [Route("{guid}")]
         public async Task<Artist> Get([FromRoute] string guid)
         {
+            await Task.Delay(1000);
             return await this.service.Get(Guid.Parse(guid));
         }
 

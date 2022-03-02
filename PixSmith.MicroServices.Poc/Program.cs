@@ -1,4 +1,3 @@
-using Microsoft.EntityFrameworkCore;
 using PixSmith.MicroServices.Infrastructure.Database;
 using PixSmith.MicroServices.Infrastructure.Repositories;
 using PixSmith.MicroServices.Infrastructure.Repositories.Interfaces;
@@ -17,7 +16,7 @@ builder.Services.AddControllers()
     .AddJsonOptions(opts =>
     {
         opts.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
-        opts.JsonSerializerOptions.AddContext<ArtistContext>();        
+        opts.JsonSerializerOptions.AddContext<ArtistContext>();
     });
 
 builder.Services.AddTransient<IArtistRepository, ArtistRepository>();
