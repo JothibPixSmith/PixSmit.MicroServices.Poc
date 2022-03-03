@@ -25,9 +25,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{D7
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PixSmith.MicroServices.Poc.Infrastructure.JsonContexts", "PixSmith.MicroServices.Poc.Infrastructure.JsonContexts\PixSmith.MicroServices.Poc.Infrastructure.JsonContexts.csproj", "{D8EE1D95-E575-4A27-AC89-65B2875AE827}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Example_Clients", "Example_Clients", "{08168159-00C0-4E0B-A58A-A5DAA9AA72A6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Benchmarks", "Benchmarks", "{08168159-00C0-4E0B-A58A-A5DAA9AA72A6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PixSmith.MicroServices.Poc.AsyncAwait", "PixSmith.MicroServices.Poc.AsyncAwait\PixSmith.MicroServices.Poc.AsyncAwait.csproj", "{3714242E-BCB8-4900-A84E-8E5DB4747852}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PixSmith.MicroServices.Poc.AsyncAwaitBenchmark", "PixSmith.MicroServices.Poc.AsyncAwait\PixSmith.MicroServices.Poc.AsyncAwaitBenchmark.csproj", "{3714242E-BCB8-4900-A84E-8E5DB4747852}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PixSmith.MicroServices.Poc.AsyncAwaitVsSync", "PixSmith.MicroServices.Poc.AsyncAwaitVsSync\PixSmith.MicroServices.Poc.AsyncAwaitVsSync.csproj", "{48252505-4D90-487A-AEBC-27FE1A735C32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{3714242E-BCB8-4900-A84E-8E5DB4747852}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3714242E-BCB8-4900-A84E-8E5DB4747852}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3714242E-BCB8-4900-A84E-8E5DB4747852}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48252505-4D90-487A-AEBC-27FE1A735C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48252505-4D90-487A-AEBC-27FE1A735C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48252505-4D90-487A-AEBC-27FE1A735C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48252505-4D90-487A-AEBC-27FE1A735C32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +90,7 @@ Global
 		{8B7264B5-E7D3-4057-B79D-0C838C43D2A1} = {D7B7CD32-5E94-4265-A443-074A618A2B56}
 		{D8EE1D95-E575-4A27-AC89-65B2875AE827} = {E52A0C04-CA95-40AE-86E7-B2C81FE48AF9}
 		{3714242E-BCB8-4900-A84E-8E5DB4747852} = {08168159-00C0-4E0B-A58A-A5DAA9AA72A6}
+		{48252505-4D90-487A-AEBC-27FE1A735C32} = {08168159-00C0-4E0B-A58A-A5DAA9AA72A6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C9CE6FD2-B978-4544-858A-C4A6DEC54B49}

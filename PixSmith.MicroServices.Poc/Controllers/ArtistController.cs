@@ -19,7 +19,6 @@ namespace PixSmith.MicroServices.Controllers
         [Route("{guid}")]
         public async Task<Artist> Get([FromRoute] string guid)
         {
-            await Task.Delay(1000);
             return await this.service.Get(Guid.Parse(guid));
         }
 
